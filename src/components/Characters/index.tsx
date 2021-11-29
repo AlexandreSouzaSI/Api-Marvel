@@ -1,6 +1,5 @@
 import { Fragment, useCallback, useEffect, useMemo, useState } from "react";
 import api from '../../services/api';
-import { FiChevronDown } from 'react-icons/fi'
 import { ButtonMore, Card, CardList, Container, Name } from "./styles";
 import { Header, Input, Buscar, Button, Row, Text } from "../index";
 import logo from '../../assets/logo.jpg'
@@ -140,9 +139,7 @@ const Characters = () => {
           </CardList>
           {isActive ?  
           <ButtonMore onClick={handleMore} fontSize="bodyExtraLarge">
-            <FiChevronDown size={20} />
               Mais
-            <FiChevronDown size={20} />
           </ButtonMore> : null}
       </Container>
     )
